@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_String"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="Write Message" />-->
+
+    <!--&lt;!&ndash;ADD onClick&ndash;&gt;-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_SaveStr"-->
+    <!--android:onClick="onSharedPreference"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Save Message" />-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_DisplayStr"-->
+    <!--android:onClick="onSharedPreference"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Display All Messages" />-->
+    <Button
+        android:id="@+id/btn_AddString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAddString"
+        android:text="Add String" />
+
+    <!--read and write to fileIn-->
+    <EditText
+        android:id="@+id/et_File"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message to File" />
+
+    <Button
+        android:id="@+id/btn_WriteFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onWriteToFile"
+        android:text="Write to File" />
+
+    <Button
+        android:id="@+id/btn_ReadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onReadToFile"
+        android:text="Read File" />
+
+    <TextView
+        android:id="@+id/txt_File"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--//////////////////////////////////////////////-->
+
+    <Button
+        android:id="@+id/btn_CreateDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSQLiteDatabase"
+        android:text="Create Database" />
+
+    <Button
+        android:id="@+id/btn_ReadDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSQLiteDatabase"
+        android:text="Display Database" />
+
+    <Button
+        android:id="@+id/btn_UpdateDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSQLiteDatabase"
+        android:text="Update Database" />
+
+    <Button
+        android:id="@+id/btn_DestroyDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSQLiteDatabase"
+        android:text="Destroy Database" />
+
+    <Button
+        android:id="@+id/btn_DisplayImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSQLiteDatabase"
+        android:text="Display Images" />
+
+    <!--////////////////-->
+
+    <ListView
+        android:id="@+id/lvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/lvPictures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

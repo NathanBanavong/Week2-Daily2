@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMessage"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_String"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Message" />
+
+    <!--ADD onClick-->
+    <Button
+        android:id="@+id/btn_SaveStr"
+        android:onClick="msgSharedPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Message" />
+    <Button
+        android:id="@+id/btn_DisplayStr"
+        android:onClick="msgSharedPreference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display All Messages" />
+
+    <ListView
+        android:id="@+id/lv_stringList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
+
+</LinearLayout>
